@@ -75,6 +75,7 @@ function updateCartQuantity() {
 let buttonState = false;
 let state;
 
+// setTimeout to added message (bugged)
 function addedToCartMessage(addedToCartMsg) {
   addedToCartMsg.classList.add("js-add-to-cart-active");
   if (!buttonState) {
