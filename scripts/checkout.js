@@ -91,7 +91,7 @@ cart.forEach((cartItem) => {
 
     `;
 });
-
+// old-state
 document.querySelector(".js-order-summary").innerHTML = cartSummaryHTML;
 
 document.querySelectorAll(".js-delete-link").forEach((link) => {
