@@ -1,9 +1,10 @@
+// use function to generate object in OOP
 function Cart(localStorageKey) {
   const cart = {
     cartItems: undefined,
 
     loadFromStorage() {
-      cart.cartItems = JSON.parse(localStorage.getItem(localStorageKey));
+      this.cartItems = JSON.parse(localStorage.getItem(localStorageKey));
 
       // "this" gives us the cart object
       if (!this.cartItems) {
@@ -84,3 +85,7 @@ const cart = Cart("cart-oop");
 const businessCart = Cart("cart-business");
 
 cart.loadFromStorage();
+businessCart.loadFromStorage();
+
+console.log(cart);
+console.log(businessCart);
